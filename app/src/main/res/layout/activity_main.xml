@@ -1,0 +1,76 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@android:color/white">
+
+    <!-- App Name -->
+    <TextView
+        android:id="@+id/appName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Motiv8Me"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="24dp" />
+
+    <!-- Menu Button -->
+    <ImageButton
+        android:id="@+id/menuButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_menu"
+    android:contentDescription="Menu"
+    android:background="?attr/selectableItemBackgroundBorderless"
+    android:layout_alignParentEnd="true"
+    android:layout_alignParentTop="true"
+    android:layout_marginEnd="16dp"
+    android:layout_marginTop="8dp" />
+
+    <!-- Motivational Quotes Display -->
+    <TextView
+        android:id="@+id/quotesTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/appName"
+        android:layout_marginTop="24dp"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:padding="16dp"
+        android:background="@drawable/rounded_corners"
+    android:elevation="4dp"
+    android:layout_marginBottom="24dp" />
+
+    <!-- Input Field for New Quote -->
+    <EditText
+        android:id="@+id/newQuoteEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter new motivational quote"
+        android:layout_below="@id/quotesTextView"
+        android:layout_marginBottom="24dp"
+        android:padding="12dp"
+        android:background="@android:color/white"
+        android:elevation="4dp"
+        android:layout_marginTop="16dp" />
+
+    <!-- Send Data Button -->
+    <Button
+        android:id="@+id/sendDataButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Quote"
+        android:textColor="@android:color/white"
+        android:backgroundTint="#c71585"
+        android:layout_below="@id/newQuoteEditText"
+        android:layout_centerHorizontal="true"
+        android:paddingStart="24dp"
+        android:paddingEnd="24dp"
+        android:paddingTop="12dp"
+        android:paddingBottom="12dp"
+        android:elevation="4dp" />
+
+</RelativeLayout>

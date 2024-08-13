@@ -1,0 +1,43 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- About Heading -->
+    <TextView
+        android:id="@+id/aboutHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="About"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp" />
+
+    <!-- About Text -->
+    <TextView
+        android:id="@+id/aboutText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Motiv8Me is your ultimate companion for daily inspiration and positive thinking. Our app offers a collection of uplifting quotes designed to motivate and energize you throughout the day. With a simple and intuitive interface, you can easily add, view, and share your favorite quotes. Whether you're looking for a quick boost or a moment of reflection, DailyMotivation helps you stay inspired and focused on your goals. Join our community and let every day be a step towards a more positive you!"
+        android:textSize="18sp"
+        android:layout_below="@id/aboutHeading"/>
+
+    <!-- Back Button -->
+    <Button
+        android:id="@+id/backButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:textColor="@android:color/white"
+        android:backgroundTint="#c71585"
+        android:layout_below="@id/aboutText"
+        android:layout_marginTop="16dp"
+        android:paddingStart="24dp"
+        android:paddingEnd="24dp"
+        android:paddingTop="12dp"
+        android:paddingBottom="12dp"
+        android:elevation="4dp" />
+
+</RelativeLayout>
